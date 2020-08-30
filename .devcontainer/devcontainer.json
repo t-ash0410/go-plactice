@@ -1,0 +1,21 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+	"name": "go mysql sample",
+	"dockerComposeFile": [
+	  "../docker-compose.yml"
+	  //,"docker-compose.extend.yml"
+	],
+	"service": "go",
+	"workspaceFolder": "/go/src/go",
+	"extensions": [
+		"ms-azuretools.vscode-docker",
+		"golang.go"
+	],
+	"settings": {
+	  "editor.tabSize": 2,
+	  "files.insertFinalNewline": true,
+	  "files.trimFinalNewlines": true,
+	  "terminal.integrated.shell.linux": "/bin/bash"
+	},
+	"shutdownAction": "none" // or "stopCompose"
+  }
